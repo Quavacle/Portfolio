@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Poppins&display=swap');
+
+/* Project specific styles */
+#asl-list {
+  justify-content: center;
+}
+
+a > * {
+  margin-right: 5px;
+}
+
+
+.satsang {
+  background-color: rgba(40, 205, 156, 0.9) !important;
+}
+
+.habit {
+  background-color: rgba(191, 40, 205, 0.9) !important;
+}
+
+.satsang > a:hover {
+  background-color: rgba(40, 205, 156, 0.9);
+}
+      
+.habit > a:hover {
+  background-color: rgba(191, 40, 205, 0.9);
+}
+
+html {
+ background-image: url('../images/more-leaves.png')
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 90vh;
+}
+
+.header {
+  font-family: 'Russo One', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: rgba(205, 40, 101, 0.9);
+  text-align: center;
+  box-shadow: 12px 12px 2px 1px rgba(119, 30, 62, 0.6);
+  border-radius: 4px;
+  min-width: 90%;
+  flex: 1 1 10vh;
+}
+
+.body {
+  display: flex;
+  flex: 2 1 60vh;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: mistyrose;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  display: flex;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  height: 75%;
+  width: 85%;
+  left: 7.5%;
+  background-color: rgba(0, 0, 0, 0.8);
+  right: 7.5%;
+  transition: all 0.5s; 
+}
+
+p {
+  padding: 5% 5%;
+}
+
+ul {
+  align-self: stretch;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px 5px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul > i {
+  font-size: 27px;
+}
+
+a {
+  padding: 2px 2px 2px 2px;
+  text-decoration: none;
+  margin-bottom: 2%;
+  color: mistyrose;
+  border-radius: 4px;
+  background-color: none;
+  transition: background-color 0.2s;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: rgba(205, 40, 101, 0.9);
+}
+
+.stack {
+  text-align: center;
+  flex: 1;
+}
+
+.body > p {
+  flex: 8;
+}
+
+.thumb {
+  width: 25%;
+  height: auto;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-radius: 4px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  color: mistyrose;
+  padding-top: 2%;
+  padding-bottom: 0;
+  width: 70vw;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1 1 8vh;
+}
+
+
+
+@media (max-width: 1000px) {
+  .body {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  i {
+    display: none;
+  }
+}
