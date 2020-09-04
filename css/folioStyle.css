@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Poppins&family=Rubik&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
 :root {
   --primary-one: rgb(250, 128, 114);
   --primary-two: #a0522d;
   --primary-three: rgb(165, 165, 131);
   --primary-four: mediumaquamarine;
  
+  /* Transition times, for quick fine-tuning */
   --long-transition: 1000ms;
   --medium-transition: 750ms;
   --short-transition: 500ms;
@@ -173,6 +174,13 @@ h1 {
   color: mistyrose;
 }  
 
+.signature {
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 15vw;
+  color: mistyrose;
+  grid-row-start: 1;
+  transform: translateY(97%) rotate(-30deg) translateX(5%);
+}
 /* Projects Section */
 
 .two {
@@ -350,6 +358,11 @@ button:active {
   
   * {
     font-size: 15px;
+  }
+
+  .signature {
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 }
 
