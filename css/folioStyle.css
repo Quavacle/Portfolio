@@ -175,8 +175,9 @@ h1 {
 }  
 
 .signature {
+  z-index: 2;
   font-family: 'Bilbo Swash Caps', cursive;
-  font-size: 15vw;
+  font-size: 12vw;
   color: mistyrose;
   grid-row-start: 1;
   transform: translateY(97%) rotate(-30deg) translateX(5%);
