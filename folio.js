@@ -3,12 +3,14 @@ const secret = document.querySelector('.secret')
 const leftButton = document.querySelector('.left')
 const rightButton = document.querySelector('.right')
 const projectsContainer = document.querySelector('.projects')
-let currentProject = 0;
-const projects = ['asl.html', 'satsang.html', 'habit.html']
+let currentProject = 0
+const projects = ['asl.html', 'owfa.html', 'habit.html']
 
 function togglePanel() {
   const currentlyActive = document.querySelector('.active') || null
-  if (currentlyActive) { currentlyActive.classList.remove('active') }
+  if (currentlyActive) {
+    currentlyActive.classList.remove('active')
+  }
   if (currentlyActive === this.parentNode) {
     this.parentNode.classList.remove('active')
   } else {
@@ -30,10 +32,13 @@ function changeProject(forward = true) {
       currentProject--
     }
   }
-  projectsContainer.setAttribute('data', './projects/' + projects[currentProject]);
+  projectsContainer.setAttribute(
+    'data',
+    './projects/' + projects[currentProject]
+  )
 }
 
-panels.forEach(panel => panel.addEventListener('click', togglePanel))
+panels.forEach((panel) => panel.addEventListener('click', togglePanel))
 
 leftButton.addEventListener('click', () => changeProject(false))
 rightButton.addEventListener('click', () => changeProject())
