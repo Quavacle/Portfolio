@@ -269,11 +269,11 @@ h1 {
   color: mistyrose;
   grid-row-start: 1;
   border-radius: 5%;
-  width: 150%;
+  width: 125%;
   position: relative;
-  left: 25%;
+  left: 40%;
+  top: 20%;
   box-shadow: 4px 2px rgba(0, 0, 0, 0.3);
-
   border: 1px solid rgba(133, 27, 27, 0.315);
   
 }
@@ -511,6 +511,7 @@ button:active {
   .signature {
     grid-row-start: 3;
     grid-row-end: 4;
+    display: none;
   }
 }
 
